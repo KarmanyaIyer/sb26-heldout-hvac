@@ -1,0 +1,18 @@
+sb26-heldout-hvac
+Copyright 2026 Karmanya Iyer. Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository includes third-party code shared publicly on Kaggle for the NeurIPS 2026
+Smart Buildings Challenge under the competition's open-source code-sharing rule:
+
+- Adaptive physics-informed HVAC policy by Daniel Wu
+  https://www.kaggle.com/code/danielwuu/cpu-b-conditional-hotwater-20261022
+- Supervisory extensions from the notebook by penguin069
+  https://www.kaggle.com/code/penguin069/smart-buildings-best-water-pump-safety001
+
+Both are contained in src/policies/penguin.py and remain the work of their authors.
+
+patches/kit-fixed.patch is a diff against the Smart Buildings Challenge starter kit
+(https://github.com/smart-buildings-2026/starter-kit, Copyright 2024-2026 The Smart Buildings
+Competition Authors, Apache License 2.0, itself derived from Google's sbsim). It combines the
+source changes of the starter kit's open pull requests #2 (energy-balanced hot-water tank) and
+#3 (airflow-weighted return air), both by GitHub user StnCsn.

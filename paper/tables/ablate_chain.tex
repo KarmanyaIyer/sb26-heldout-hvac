@@ -1,0 +1,13 @@
+\begin{tabular}{lrrr}
+\toprule
+Variant (10-day val16) & Score & $\Delta$ vs.\ ref. & Better / 16 \\
+\midrule
+\multicolumn{4}{l}{\emph{Corrected simulator: public chain components, ref.\ public chain} (ref.\ 7.436)} \\
+Base MPC only~\citep{wu2026cpu} & 8.079 & +8.65\% & 0 \\
++ error reserve & 8.058 & +8.37\% & 0 \\
++ identified response gain, 36 h warm-water standby & 7.887 & +6.06\% & 1 \\
++ 72 h hold, 274 K setback, fast recovery & 7.688 & +3.38\% & 2 \\
++ empty-day relaxation, 0.5 K SAT grid, error-scaled margin & 7.506 & +0.94\% & 3 (4 tied) \\
++ demand-sized water temperature (320 K floor) & 7.437 & +0.01\% & 2 (5 tied) \\
+\bottomrule
+\end{tabular}

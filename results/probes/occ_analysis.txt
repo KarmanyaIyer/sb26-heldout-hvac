@@ -1,0 +1,8 @@
+building_0601_phoenix_7.npz        zones=43 n_comp=38 median dP(occ-empty)=-409 W median sd=453 W  mean occupants when occ=1.54  theta5 median=0.1789
+   departures=68 power change after departure: median 67 W, frac < -50W 0.13
+building_0602_minneapolis_1.npz    zones=24 n_comp=23 median dP(occ-empty)=-206 W median sd=456 W  mean occupants when occ=1.51  theta5 median=0.1328
+   departures=60 power change after departure: median -16 W, frac < -50W 0.13
+building_0604_atlanta_7.npz        zones=19 n_comp=18 median dP(occ-empty)=-372 W median sd=688 W  mean occupants when occ=1.48  theta5 median=0.0973
+   departures=45 power change after departure: median -33 W, frac < -50W 0.38
+building_0605_fairbanks_3.npz      zones=29 n_comp=29 median dP(occ-empty)=-156 W median sd=581 W  mean occupants when occ=1.00  theta5 median=0.1441
+   departures=74 power change after departure: median 58 W, frac < -50W 0.11

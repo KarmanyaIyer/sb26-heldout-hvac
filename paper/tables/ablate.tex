@@ -1,0 +1,40 @@
+\begin{tabular}{lrrr}
+\toprule
+Variant (10-day val16) & Score & $\Delta$ vs.\ ref. & Better / 16 \\
+\midrule
+\multicolumn{4}{l}{\emph{Corrected simulator: cost weight, ref.\ public chain} (ref.\ 7.436)} \\
+Gas price $\lambda_{\mathrm{gas}}$ 0.30 $\to$ 0.50 & 7.436 & +0.00\% & 4 (9 tied) \\
+\midrule
+\multicolumn{4}{l}{\emph{Corrected simulator: our changes, ref.\ public chain with $\lambda_{\mathrm{gas}}=0.5$} (ref.\ 7.436)} \\
+Comfort margin 0.08 $\to$ 0.04 K & 7.470 & +0.45\% & 0 \\
+Comfort margin 0.08 $\to$ 0.16 K & 7.462 & +0.35\% & 2 \\
+Standby floor 274 $\to$ 280 K (frost limit) & 7.523 & +1.17\% & 0 (12 tied) \\
+Standby ceiling 307 $\to$ 303 K & 7.425 & $-$0.15\% & 3 (13 tied) \\
+Standby ceiling 307 $\to$ 300 K & 7.465 & +0.39\% & 2 (9 tied) \\
+Pre-conditioning ramp 1 $\to$ 0.5 h & 7.474 & +0.51\% & 3 \\
+Water hold after demand 72 $\to$ 12 h & 7.429 & $-$0.09\% & 10 (4 tied) \\
+Water hold after demand 72 $\to$ 2 h & 7.426 & $-$0.14\% & 9 (4 tied) \\
+Water reservoir floor 320 $\to$ 310 K & 7.436 & $-$0.01\% & 1 (15 tied) \\
+Water reservoir floor 320 $\to$ 335 K & 7.439 & +0.04\% & 1 (13 tied) \\
+Opt.\ start $\ell_0$ 0.5 h, $\ell_1$ 0.35 h/K, cap 10 h & 8.053 & +8.30\% & 4 \\
+Opt.\ start $\ell_0$ 0.25 h, $\ell_1$ 0.10 h/K, cap 3 h & 7.449 & +0.17\% & 9 \\
+Opt.\ start $\ell_0$ 0.25 h, $\ell_1$ 0.07 h/K, cap 3 h & 7.426 & $-$0.13\% & 12 \\
+Opt.\ start $\ell_0$ 0.25 h, $\ell_1$ 0.05 h/K, cap 3 h & 7.404 & $-$0.44\% & 13 \\
+Opt.\ start $\ell_0$ 0.25 h, $\ell_1$ 0.03 h/K, cap 3 h & 7.442 & +0.08\% & 8 \\
+Opt.\ start, 0.05 h/K, only $>$1 h before comfort & 7.429 & $-$0.10\% & 2 (13 tied) \\
+Ceiling 303 K + 12 h hold & 7.418 & $-$0.25\% & 12 (2 tied) \\
+Ceiling 303 K + 2 h hold & 7.414 & $-$0.29\% & 11 (2 tied) \\
+\rowcolor[HTML]{EDF3FC}\textbf{Ours} (v2a): opt.\ start 0.05 h/K + ceiling 303 K + 2 h hold & 7.383 & $-$0.71\% & 14 \\
+\rowcolor[HTML]{EDF3FC}Ours, keeping the 72 h hold (v2b) & 7.394 & $-$0.57\% & 13 \\
+Oracle: per-zone departures (relax empty zones after 13:00) & 7.050 & $-$5.20\% & 16 \\
+\midrule
+\multicolumn{4}{l}{\emph{Corrected simulator: occupancy oracle, ref.\ public chain} (ref.\ 7.436)} \\
+Schedule-only control with the oracle's band formula & 7.726 & +3.90\% & 3 \\
+Oracle: future per-zone occupancy, same band formula & 6.930 & $-$6.81\% & 15 \\
+\midrule
+\multicolumn{4}{l}{\emph{Shipped simulator, ref.\ public chain with $\lambda_{\mathrm{gas}}=0.5$} (ref.\ 7.455)} \\
+Water hold after demand 72 $\to$ 2 h & 7.918 & +6.21\% & 2 (4 tied) \\
+\rowcolor[HTML]{EDF3FC}Ours, keeping the 72 h hold (v2b) & 7.421 & $-$0.46\% & 13 \\
+\rowcolor[HTML]{EDF3FC}\textbf{Ours} (v2a) & 7.946 & +6.58\% & 5 \\
+\bottomrule
+\end{tabular}
